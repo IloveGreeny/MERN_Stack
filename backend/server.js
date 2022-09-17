@@ -1,4 +1,5 @@
 const express = require("express");
+const ReciepeRoute = require("./routes/recieps");
 require("dotenv").config();
 
 const app = express()
@@ -8,9 +9,11 @@ app.use((req,res,next)=> {
     next();
 })
 
-app.get("/",((req,res)=> {
-    res.json({country : "Armenia"});
-}))
+app.get("/",(req,res)=> {
+    res.status(200);
+    res.json({country : "Armenia"})
+});
+
 
 app.listen(process.env.PORT, ()=>{
     console.log("Running on", process.env.PORT);

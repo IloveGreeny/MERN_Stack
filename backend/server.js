@@ -9,7 +9,7 @@ app.use((req,res,next)=> {
     next();
 })
 
-app.use("/api/recipes",RecipeRoute);
+app.use("/api/countries",RecipeRoute);
 
 
 app.listen(process.env.PORT, ()=>{

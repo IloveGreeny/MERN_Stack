@@ -17,5 +17,11 @@ router.post("/",(req,res)=> {
     res.json({message : "Post A New Country"});
 });
 
+router.delete("/:id",(req,res)=> {
+    res.status(200);
+    res.json({message : "Delete A New Country"});
+});
+
+
 module.exports = router;
 

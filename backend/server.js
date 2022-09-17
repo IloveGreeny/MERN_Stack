@@ -9,7 +9,8 @@ app.use((req,res,next)=> {
     next();
 })
 
-app.use(RecipeRoute);
+app.use("/api/recipes",RecipeRoute);
+
 
 app.listen(process.env.PORT, ()=>{
     console.log("Running on", process.env.PORT);

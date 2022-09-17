@@ -7,5 +7,10 @@ router.get("/",(req,res)=> {
     res.json({country : "Armenia"})
 });
 
+router.get("/hello",(req,res)=> {
+    res.status(200);
+    res.json({message : "Hello"})
+});
+
 module.exports = router;
 

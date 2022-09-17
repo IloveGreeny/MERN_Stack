@@ -9,11 +9,7 @@ app.use((req,res,next)=> {
     next();
 })
 
-app.get("/",(req,res)=> {
-    res.status(200);
-    res.json({country : "Armenia"})
-});
-
+app.use(ReciepeRoute);
 
 app.listen(process.env.PORT, ()=>{
     console.log("Running on", process.env.PORT);

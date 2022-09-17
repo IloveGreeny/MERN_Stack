@@ -1,5 +1,5 @@
 const express = require("express");
-const RecipeRoute= require("./routes/recieps");
+const RecipeRoute= require("./routes/countries");
 require("dotenv").config();
 
 const app = express()

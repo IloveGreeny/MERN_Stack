@@ -22,6 +22,10 @@ router.delete("/:id",(req,res)=> {
     res.json({message : "Delete A New Country"});
 });
 
+router.patch("/:id",(req,res)=> {
+    res.status(200);
+    res.json({message : "Update A New Country"});
+});
 
 module.exports = router;
 

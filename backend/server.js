@@ -1,5 +1,5 @@
 const express = require("express");
-const ReciepeRoute = require("./routes/recieps");
+const RecipeRoute= require("./routes/recieps");
 require("dotenv").config();
 
 const app = express()
@@ -9,7 +9,7 @@ app.use((req,res,next)=> {
     next();
 })
 
-app.use(ReciepeRoute);
+app.use(RecipeRoute);
 
 app.listen(process.env.PORT, ()=>{
     console.log("Running on", process.env.PORT);

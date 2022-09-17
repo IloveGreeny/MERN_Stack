@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 
 const app = express()
 
@@ -6,6 +7,6 @@ app.get("/",((req,res)=> {
     res.json({country : "Armenia"});
 }))
 
-app.listen(5000, ()=>{
-    console.log("Running on Port 5000");
+app.listen(process.env.PORT, ()=>{
+    console.log("Running on" + process.env.PORT);
 });

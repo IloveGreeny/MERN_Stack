@@ -12,15 +12,7 @@ router.get("/:id",(req,res)=> {
     res.json({message : "Get One Country"});
 });
 
-router.post("/",async (req,res)=> {
-    const {title, capital, weather} = req.body;
-    try {
-        const country = await Countries.create({title,capital,weather})
-        res.status(200).json(country)
-    }catch (err) {
-        res.status(400).json({error : err.message})
-    }
-});
+
 
 router.delete("/:id",(req,res)=> {
     res.status(200);

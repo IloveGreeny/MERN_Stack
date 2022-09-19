@@ -15,7 +15,7 @@ const countrySchema = new Schema({
         type: Number,
         required: false,
     }
-},{timestamps:true})
+},{timestamps:true});
 
-module.exports = mongoose.model("Country",countrySchema)
+module.exports = mongoose.model("Country",countrySchema);
 

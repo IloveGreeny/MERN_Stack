@@ -27,6 +27,7 @@ const getOneCountry = async (req,res) => {
 
     res.status(200).json(country)
 };
+
 module.exports = {
     createCountry,
     getAllCountries,

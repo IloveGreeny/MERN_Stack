@@ -28,9 +28,40 @@ const getOneCountry = async (req,res) => {
     res.status(200).json(country)
 };
 
+const deleteCountry =  async (req,res) => {
+    const  { id } = req.params;
+
+    if(!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(400).json({error : "No Such Country"});
+    }
+    const country = await Countries.findOneAndDelete({_id: id});
+
+    if(!country) {
+        res.status(400).json({error : "No Such Country"});
+    }
+    res.status(200).json(country);
+};
+
+
+const updateCountry = async (req,res) => {
+    const  { id } = req.params;
+    if(!mongoose.Types.ObjectId.isValid(id)) {
+        return res.status(400).json({error : "No Such Country"})
+    }
+    const country = await Countries.findOneAndUpdate({_id:id},{
+        ...req.body
+    })
+    if(!country) {
+        res.status(400).json({error:"No Such Country"});
+    }
+    res.status(200).json(country)
+}
+
 
 module.exports = {
     createCountry,
     getAllCountries,
-    getOneCountry
+    getOneCountry,
+    deleteCountry,
+    updateCountry
 };

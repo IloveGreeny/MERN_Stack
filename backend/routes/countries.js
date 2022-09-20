@@ -6,7 +6,7 @@ router.get("/",getAllCountries);
 
 router.get("/:id",getOneCountry);
 
-
+router.post("/",createCountry);
 
 router.delete("/:id",(req,res)=> {
     res.status(200);

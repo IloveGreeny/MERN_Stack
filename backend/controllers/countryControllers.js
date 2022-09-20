@@ -16,17 +16,6 @@ const getAllCountries = async (req,res) => {
     res.status(200).json(countries);
 };
 
-const getOneCountry = async (req,res) => {
-    const  { id } = req.params;
-
-    if(!mongoose.Types.ObjectId.isValid(id)) {
-        return res.status(400).json({error : "No Such Country"})
-    }
-
-    const country = await Countries.findById(id);
-
-    res.status(200).json(country)
-};
 
 module.exports = {
     createCountry,

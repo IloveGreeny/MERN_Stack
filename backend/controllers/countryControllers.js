@@ -11,10 +11,7 @@ const createCountry = async (req,res) => {
     }
 };
 
-const getAllCountries = async (req,res) => {
-    const countries = await Countries.find({}).sort({createdAt : -1});
-    res.status(200).json(countries);
-};
+
 
 const getOneCountry = async (req,res) => {
     const  { id } = req.params;

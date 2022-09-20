@@ -1,5 +1,4 @@
-const Countries = require("../models/countryModel");
-const mongoose = require("mongoose");
+
 
 const createCountry = async (req,res) => {
     const {title, capital, weather} = req.body;

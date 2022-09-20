@@ -4,6 +4,8 @@ const router = express.Router();
 
 router.get("/",getAllCountries);
 
+router.get("/:id",getOneCountry);
+
 
 
 router.delete("/:id",(req,res)=> {

@@ -6,12 +6,12 @@ export default function App() {
   return (
       <Router>
           <Navbar/>
-          <Routes>
+            <Routes>
               <Route
               path="/"
               element={<Home/>}
               />
-          </Routes>
+            </Routes>
       </Router>
   );
 }

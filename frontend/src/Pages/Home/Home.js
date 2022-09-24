@@ -1,7 +1,7 @@
-import {useEffect} from "react";
 import {CountryDetails} from "../../Componets/CountryDetails/CountryDetails"
 import {CountryForm} from "../../Componets/CountryForm/CountryForm";
 import {UseCountriesContext} from "../../Hooks/UseCountriesContext/UseCountriesContext";
+import {useEffect} from "react";
 
 export default function Home() {
     const {countries , dispatch } = UseCountriesContext()

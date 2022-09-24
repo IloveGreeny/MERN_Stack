@@ -1,6 +1,6 @@
 import { CountryDetails } from "../../Componets/CountryDetails/CountryDetails";
 import { CountryForm } from "../../Componets/CountryForm/CountryForm";
-import {UseCountriesContext} from "../../Hooks/UseCountriesContext/UseCountriesContext";
+import { UseCountriesContext } from "../../Hooks/UseCountriesContext/UseCountriesContext";
 import {useEffect} from "react";
 
 export default function Home() {

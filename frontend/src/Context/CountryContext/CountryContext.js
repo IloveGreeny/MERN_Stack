@@ -1,6 +1,5 @@
 import {createContext , useReducer} from "react";
 
-
 export const CountryContext = createContext();
 
 export const countriesReducer = (state,action) => {

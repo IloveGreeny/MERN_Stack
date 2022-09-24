@@ -1,4 +1,4 @@
-import {CountryDetails} from "../../Componets/CountryDetails/CountryDetails";
+import { CountryDetails } from "../../Componets/CountryDetails/CountryDetails";
 import {CountryForm} from "../../Componets/CountryForm/CountryForm";
 import {UseCountriesContext} from "../../Hooks/UseCountriesContext/UseCountriesContext";
 import {useEffect} from "react";

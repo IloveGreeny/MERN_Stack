@@ -7,7 +7,7 @@ export const CountryForm = () => {
   const [capital, setCapital] = useState("");
   const [weather, setWeather] = useState("");
   const [error, setError] = useState(null);
-   const [emptyFields, setEmptyFields] = useState([]);
+  const [emptyFields, setEmptyFields] = useState([]);
 
     const handleSubmit = async (e) => {
     e.preventDefault();

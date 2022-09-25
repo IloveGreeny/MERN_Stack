@@ -2,7 +2,7 @@ import {useState} from "react";
 import {UseCountriesContext} from "../../Hooks/UseCountriesContext/UseCountriesContext";
 
 export const CountryForm = () => {
-    const {dispatch} = UseCountriesContext();
+   const {dispatch} = UseCountriesContext();
   const [title,setTitle] = useState("");
   const [capital, setCapital] = useState("");
   const [weather, setWeather] = useState("");
